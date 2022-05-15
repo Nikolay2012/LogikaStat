@@ -1,0 +1,13 @@
+{% extends 'appLogikaStats/base.html' %}
+
+{% block content %}
+    <h1>{{h1}}</h1>
+    <ul>
+        {% for d in data %}
+            <li>
+                <h1>{{d.title}}</h1>
+                <p>{{d.content}}</p>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

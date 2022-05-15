@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Реєстрація</title>
+        <link rel="stylesheet" href="{% static 'appLogikaStats/css/registration.css' %}">
+    </head>
+    <body>
+        <div class="main_form">
+            <form action="" method="POST">
+                {% csrf_token %}
+                <p>
+                    <input type="text" placeholder="Login" name="user_name">
+                </p>
+                <p>
+                    <input type="text" placeholder="Password" name="password_1">
+                </p>
+                
+                <p  class="button-enter">
+                    <input type="submit" value="Вхід">
+                </p>
+                <p>
+                    <a href="{% url 'register' %}">Зареєструватись</a>
+                </p>
+                {% if errortext != 0 %}
+                <div style="color:brown;">{{errortext}}</div>
+                {% endif %}
+            </form>
+        </div> 
+    </body>
+</html>
