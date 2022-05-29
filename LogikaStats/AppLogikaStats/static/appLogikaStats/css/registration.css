@@ -1,0 +1,43 @@
+.main_form{    
+    position: absolute;
+    top: 50%;
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    height: 450px;
+    background: hsl(0, 0%, 13%);
+    transform: translate(0, -50%);
+    align-items: center;
+    border-radius: 20px;
+}
+body{
+    display: flex;    
+    justify-content: center;
+}
+form{
+    text-align: center;
+    width: 75%;  
+}
+.main_form form p input{
+    width: 120%;
+    height: 50px;
+    text-align: center;
+    border-radius: 20px;
+    border: none;
+}
+.main_form form p.button-enter input{
+    height: 25px;
+}
+.main_form form p{    
+    display: flex;
+    justify-content: center;
+}
+.main_form form p a{
+    text-decoration: none;
+    color: #999;
+}
+.button-enter{
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+}
